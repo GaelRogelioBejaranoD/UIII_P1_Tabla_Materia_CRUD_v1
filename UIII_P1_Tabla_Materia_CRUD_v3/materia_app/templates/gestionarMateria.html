@@ -44,6 +44,7 @@
                         <th scope="col">Codigo</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">Creditos</th>
+                        <th colspan = "2">Creditos</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -61,6 +62,8 @@
                         <td>
                           {{m.creditos}}
                         </td>
+                        <td> <a href = "" class="btn btn-info">Editar </a></td>
+                        <td> <a href = "borrarMateria/{{m.codigo}}" class="btn btn-danger">Borrar </a></td> <!--Falta de link-->
                       </tr>
                       {% endfor %}
                     </tbody>
